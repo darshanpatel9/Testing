@@ -1,0 +1,81 @@
+.outmost {
+  overflow: hidden;
+  width: 100%;
+}
+
+.login {
+  height: auto;
+  color: #00c2d6;
+  border: 2px solid #00c2d6;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  float: right;
+  left: 0px;
+  top: 10px;
+  margin: 5px;
+  padding: 7px 9px;
+  background-color: transparent;
+  /*box-shadow: 0 0 2px 2px gainsboro;*/
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+}
+.login:hover {
+  background-color: #00c2d6;
+  color: white;
+}
+
+.signupbtn {
+  border: 2px solid #20496f;
+  background: transparent;
+  padding: 15px;
+  font-size: 22px;
+  color: #20496f;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+}
+.signupbtn:hover {
+  /*background: linear-gradient(to top, rgba(32, 73, 111,1), rgba(113, 164, 211 ,1));*/
+  background-color: #20496f;
+  color: white;
+
+}
+
+.info {
+  margin-left: 200px;
+}
+.services {
+  color: white;
+  font-size: 32px;
+}
+.services_sub {
+  width: 910px;
+  height: 150px;
+  border: none;
+  color: white;
+  overflow: auto;
+}
+.service1 {
+  float: left;
+}
+.service1 ul {
+  list-style-type: none;
+  padding: 0;
+}
+.service1 li {
+  width: 295px;
+  float: left;
+  padding: 5px;
+}
+.service1 li h1 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #e6e6e7;
+}
+.service1 li div {
+  /*color: #afb0b0;*/
+  color: #e6e6e7;
+  text-align: justify;
+  text-justify: inter-word;
+}

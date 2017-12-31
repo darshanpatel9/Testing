@@ -1,0 +1,25 @@
+<div class="outmost">
+  <div class="profile_nav">
+    <button *ngIf="authService.loggedIn()" class="login" (click)="onLogoutClick()">LOGOUT</button>
+    <button *ngIf="authService.loggedIn()" class="login" routerLink="/dashboard">Dashboard</button>
+    <button *ngIf="authService.loggedIn()" class="login" routerLink="/profile">Profile</button>
+  </div>
+
+  <div *ngIf="user" class="main">
+    <div class="edit_profilebtn">
+      <button routerLink="/edit">Edit Profile</button>
+    </div>
+    <div class="profile_pic">
+      <img [src]=image_src width='150' height='150' style="border-radius: 100px">
+    </div>
+
+    <div class="profile_details">
+      <h2 class="page-header">{{user.name}}</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Username : {{user.username}}</li>
+        <li class="list-group-item">Email : {{user.email}}</li>
+      </ul>
+      <div class="change_password" routerLink="/change">Change password</div>
+    </div>
+  </div>
+</div>

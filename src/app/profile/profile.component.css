@@ -1,0 +1,140 @@
+.outmost {
+  width: 100%;
+  height: auto;
+}
+
+.profile_nav {
+  width: inherit;
+  height: 70px;
+  background-color: #eee;
+  box-shadow: 0 0 30px 0 #575757;
+}
+.profile_nav .login {
+  height: auto;
+  color: #00c2d6;
+  border: 2px solid #00c2d6;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  float: right;
+  top: 10px;
+  margin: 5px;
+  padding: 7px 9px;
+  background-color: transparent;
+  /*box-shadow: 0 0 2px 2px gainsboro;*/
+  cursor: pointer;
+}
+.profile_nav .login:hover {
+  background-color: #00c2d6;
+  color: white;
+}
+
+.main {
+  /*overflow-y: scroll;*/
+  min-width: 500px;
+  width: 500px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: #F8FAF9;
+  box-shadow: 0 0 2px 2px grey;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.edit_profilebtn {
+
+}
+.edit_profilebtn button {
+  border: none;
+  outline: none;
+  color: #00c2d6;
+  background-color: transparent;
+  padding-left: 415px;
+}
+.profile_pic {
+  width: 100%;
+  height: auto;
+}
+.profile_pic img {
+  margin: 0 auto 0 174px;
+}
+
+.profile_image {
+    height: 150px;
+}
+.profile_details {
+  margin-top: 20px;
+}
+.profile_details h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.profile_img {
+  border: 1px solid grey;
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img_logo {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.change_password {
+  color : #00c2d6;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+
+.ng2-imgcrop canvas {
+  margin-bottom: 10px;
+}
+
+.ng2-imgcrop input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.custom-class {
+  border: 1px solid #C1C1C1;
+}
+
+.cropping {
+
+  border: 1px solid #000000;
+}
+
+body{
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.uploadbtn {
+  margin-left: auto;
+  margin-right: auto;
+}
+.uploadbtn:hover {
+  color : #00c2d6;
+}
+.resetbtn {
+  margin: 0;
+}

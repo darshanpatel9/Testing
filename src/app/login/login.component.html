@@ -1,0 +1,23 @@
+<div class="outmost">
+  <div class="login_nav">
+    <button class="register" routerLink="/register">SIGN UP</button>
+  </div>
+  <div ngClass="main">
+    <div ngClass="login_top">
+      <h2>Login</h2>
+    </div>
+    <div ngClass="login_form">
+      <form [formGroup]="loginForm" (ngSubmit)="onsubmit1()" >
+        <label>Username</label><br>
+        <input (click)="username_err=false" type="text" formControlName="username" autofocus><br>
+        <span *ngIf="username_err" class="errormsg">Please enter a valid username!<br></span>
+        <br><label>Password</label><br>
+        <input (click)="password_err=false" type="password" formControlName="password"><br>
+        <span *ngIf="password_err" class="errormsg">Please enter a valid password!<br></span>
+        <br><button type="submit" ngClass="submit_valid">LOGIN</button>
+      </form>
+      <p routerLink="/forget" style="margin-left: 40px;">Forgot Password?</p>
+      <p routerLink="/register">New User?</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+.top {
+  width: 100%;
+  /*height: auto;*/
+  height: 170px;
+  /*display: block;*/
+  overflow: hidden;
+  background-color: #eee;
+  /*z-index: 1;*/
+  box-shadow: 0 0 30px 0px #575757;
+}
+@font-face {
+  font-family: 'MyFont';
+  src: url('BOMBARD_.ttf'); /* IE9 Compat Modes */
+  src: url('BOMBARD_.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('BOMBARD_.ttf') format('ttf'), /* Modern Browsers */
+  url('BOMBARD_.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('BOMBARD_.ttf#svgFontName') format('svg'); /* Legacy iOS */
+}
+.top h1 {
+  margin: 10px 0 5px 20px;
+  font-family: MyFont;
+  font-size: 40px;
+  color: black;
+  float: left;
+  clear: none;
+  background: linear-gradient(0deg, transparent 0%, #01495B 25%, #015F76 50%, #017B99 75%, #017B99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.img_logo {
+  width: 50px;
+  height: 50px;
+  margin-top: -13px;
+  -webkit-animation: spin 20s infinite linear;
+}
+
+
+@-webkit-keyframes spin {
+  0%   {
+    -webkit-transform: rotate(0deg);
+    /*-webkit-transform: rotateX(0deg)*/
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    /*-webkit-transform: rotateX(360deg)*/
+  }
+}
+
+.login {
+  height: auto;
+  color: #00c2d6;
+  border: 2px solid #00c2d6;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  float: right;
+  top: 10px;
+  margin: 5px;
+  padding: 7px 9px;
+  /*background-color: #00c2d6;*/
+  background-color: transparent;
+  /*box-shadow: 0 0 2px 2px gainsboro;*/
+  cursor: pointer;
+}
+.login:hover {
+  background-color: #00c2d6;
+  color: white;
+}
+/*.register {
+  height: auto;
+  color: #20496f;
+  border: 2px solid #20496f;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  float: right;
+  top : 10px;
+  margin: 5px;
+  padding: 7px 9px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.register:hover {
+  background-color: #20496f;
+  color: white;
+}*/

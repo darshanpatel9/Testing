@@ -1,0 +1,250 @@
+.outmost {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.dashboard_nav {
+  width: inherit;
+  height: 70px;
+  /*display: block;*/
+  overflow: hidden;
+  background-color: #eee;
+  /*z-index: 1;*/
+  box-shadow: 0 0 30px 0px #575757;
+}
+.dashboard_nav .login {
+  height: auto;
+  color: #00c2d6;
+  border: 2px solid #00c2d6;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  float: right;
+  top: 10px;
+  margin: 5px;
+  padding: 7px 9px;
+  /*background-color: #00c2d6;*/
+  background-color: transparent;
+  /*box-shadow: 0 0 2px 2px gainsboro;*/
+  cursor: pointer;
+}
+.dashboard_nav .login:hover {
+  background-color: #00c2d6;
+  color: white;
+}
+
+.loggedname {
+  /*position: relative;*/
+  /*right: 0;*/
+  /*top: 3px;*/
+  text-align: right;
+  color: whitesmoke;
+  font-size: 14px;
+  padding-right: 5px;
+  display: block;
+  width: inherit;
+}
+.expense_form {
+  margin: 5px;
+}
+.expense_form form{
+  margin: 40px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.expense_form input {
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  padding: 5px;
+  min-width: 700px;
+  background-color: #FCFCFC;
+}
+.expense_form .submit_valid {
+  border-radius: 3px;
+  border: 1px solid grey;
+  padding: 5px;
+  width: auto;
+  background-color: #089450;
+  color: white;
+}
+.expense_form .submit_invalid {
+  border-radius: 3px;
+  border: 1px solid grey;
+  padding: 5px;
+  width: auto;
+  background-color: #089450;
+  color: lightgrey;
+}
+.errormsg {
+  color: #e13c31;
+}
+input.ng-invalid.ng-touched {
+  border-bottom : 1px solid #ed120f;
+}
+
+.viewdata {
+  margin: 0;
+}
+.viewdata .viewdata_top {
+  height: 200px;
+  background-color: #D981AE;
+}
+.chart {
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+.total_amount {
+  color: white;
+  /*display: table;*/
+  position: relative;
+  top: 69px;
+  height: 200px;
+  width: auto;
+  text-align: center;
+}
+.viewdata .expense_list {
+  height: 300px;
+  overflow-y: scroll;
+}
+.viewdata ul {
+  border: none;
+  margin: 2px 35px;
+  padding: 5px;
+  width: auto;
+  list-style-type: none;
+  overflow: hidden;
+}
+.viewdata ul #viewdata_amount {
+  float: right;
+  clear: none;
+  display: inline;
+}
+.viewdata #date_title {
+  list-style-type: none;
+  background-color: #E3E3E3;
+  margin: 0;
+  padding-left: 20px;
+  color: #3B4F53;
+  font-weight: bold;
+}
+
+.container1 {
+  width: inherit;
+  min-width: 1000px;
+  height: auto;
+  border: none;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.container1 nav {
+  float: left;
+  max-width: 160px;
+  margin: 0;
+  padding: 4px;
+}
+.container1 nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container1 nav ul div {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  color: white;
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 0;
+  cursor: pointer;
+  box-shadow: 0 2px #999;
+}
+.button:hover {
+  background-color: #3e8e41
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+.arrow_cashexpense::after, .arrow_allspends::after {
+  content: "";
+  position: absolute;
+  border-width: 22px;
+  border-style: solid;
+  border-color: transparent transparent transparent #4CAF50;
+}
+.arrow_cashexpense::after {
+  left: 212px;
+  top: 114px;
+  visibility: hidden;
+}
+.arrow_allspends::after {
+  left: 212px;
+  top: 158px;
+  visibility: hidden;
+}
+
+
+.display_onclick {
+  float: left;
+  border: none;
+  border-radius: 5px;
+  background-color: #FCFCFC;
+  width: 800px;
+  height: 500px;
+  margin-left: 5px;
+  overflow: auto;
+
+}
+.date_in_form p {
+  border-bottom: 1px solid grey;
+  padding: 5px;
+  width: 660px;
+  clear: none;
+  float: left;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #D62929;
+  border-radius: 10px;
+}
+
+.datepick {
+  height: auto;
+  display: inline-block;
+}
+.timepick {
+  display: inline-block;
+}
+.cal_icon, .time_icon {
+  border: 1px solid grey;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: lightgrey;
+  margin-top: 5px;
+}
+.cal_icon span, .time_icon span {
+  padding: 3px;
+}
+.cal_icon:hover, .time_icon:hover {
+  background-color: darkgray;
+}

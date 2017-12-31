@@ -1,0 +1,9 @@
+<div class="top" #changeHeight>
+
+  <h1><!--<img src='/assets/images/darshan5.png' class="img_logo" />-->&nbsp;Expense Tracker</h1>
+  <!--<button *ngIf="!authService.loggedIn()" class="register" routerLink="/register">SIGN UP</button>-->
+  <button *ngIf="!authService.loggedIn()" class="login" routerLink="/login">LOGIN</button>
+  <button *ngIf="authService.loggedIn()" class="login" (click)="onLogoutClick()">LOGOUT</button>
+  <button *ngIf="authService.loggedIn()" class="login" routerLink="/dashboard">Dashboard</button>
+  <button *ngIf="authService.loggedIn()" class="login" routerLink="/profile">Profile</button>
+</div>

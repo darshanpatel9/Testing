@@ -1,0 +1,32 @@
+<div class="outmost">
+  <div class="signup_nav">
+    <button class="login" routerLink="/login">LOGIN</button>
+  </div>
+  <div class="main">
+    <div ngClass="register_top">
+      <h2>Register</h2>
+    </div>
+    <div ngClass="register_form">
+      <form [formGroup]="registerForm" (ngSubmit)="onsubmit()" >
+        <label>Name</label><br>
+        <input (click)="name_err=false" type="text" formControlName="name" ><br>
+        <!--<span *ngIf="!registerForm.get('name').valid && registerForm.get('name').touched" class="errormsg">Please enter a valid name!<br></span>-->
+        <span *ngIf="name_err" class="errormsg">Please enter a valid name!<br></span>
+        <br><label>Username</label><br>
+        <input (click)="username_err=false" type="text" formControlName="username" ><br>
+        <span *ngIf="username_err" class="errormsg">Please enter a valid username!<br></span>
+        <br><label>Password</label><br>
+        <input (click)="password_err=false" type="password" formControlName="password" ><br>
+        <span *ngIf="password_err" class="errormsg">Please enter a valid password!<br></span>
+        <br><label>Confirm Password</label><br>
+        <input (click)="confirmpassword_err=false; passwordmatch_err=false" type="password" formControlName="confirmpassword" ><br>
+        <span *ngIf="confirmpassword_err" class="errormsg">Please reenter above password!<br></span>
+        <span *ngIf="passwordmatch_err" class="errormsg">Password does not match!<br></span>
+        <br><label>Email Address</label><br>
+        <input (click)="email_err=false" type="email" formControlName="email" ><br>
+        <span *ngIf="email_err" class="errormsg">Please enter a valid email!<br></span>
+        <br><br><button type="submit" ngClass="submit_valid">SIGN UP</button>
+      </form>
+    </div>
+  </div>
+</div>

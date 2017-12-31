@@ -1,0 +1,68 @@
+.main {
+  /*background-color: #51929C;*/
+  background-color: #2E8790;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  min-height: 650px;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('BOMBARD_.ttf'); /* IE9 Compat Modes */
+  src: url('BOMBARD_.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('BOMBARD_.ttf') format('ttf'), /* Modern Browsers */
+  url('BOMBARD_.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('BOMBARD_.ttf#svgFontName') format('svg'); /* Legacy iOS */
+}
+h1 {
+  margin: 10px 0 5px 20px;
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  font-family: MyFont;
+  font-size: 40px;
+  color: black;
+  float: left;
+  clear: none;
+  background: linear-gradient(0deg, transparent 0%, #01495B 25%, #015F76 50%, #017B99 75%, #017B99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.img_logo {
+  width: 50px;
+  height: 50px;
+  margin-top: -13px;
+  -webkit-animation: spin 20s infinite linear;
+}
+
+
+@-webkit-keyframes spin {
+  0%   {
+    -webkit-transform: rotate(0deg);
+    /*-webkit-transform: rotateX(0deg)*/
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    /*-webkit-transform: rotateX(360deg)*/
+  }
+}
+
+
+.flashmessage {
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #D62929;
+  border-radius: 10px;
+}
